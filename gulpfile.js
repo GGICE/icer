@@ -1,9 +1,10 @@
 var gulp = require('gulp'),
-  sass = require('gulp-ruby-sass'),
+  sass = require('gulp-sass'),
   minifycss = require('gulp-minify-css'),
   uglify = require('gulp-uglify'),
   notify = require('gulp-notify'),
-  concat = require('gulp-concat');
+  concat = require('gulp-concat'),
+  plumber = require('gulp-plumber');
 
 
 
@@ -26,9 +27,10 @@ gulp.task('styles', function () {
 /* styles  dev*/
 gulp.task('stylesDev', function () {
   return gulp.src('assets/css/main.sass')
+    .pipe(plumber())
     .pipe(sass({
-      style: 'companded'
-    }))
+      outputStyle: 'companded'
+    }).on('error', sass.logError))
 
   .pipe(gulp.dest('assets/css/minify'))
 
