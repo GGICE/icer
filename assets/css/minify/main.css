@@ -288,6 +288,10 @@ table {
 td, th {
   padding: 0; }
 
+.clearfix {
+  overflow: auto;
+  zoom: 1; }
+
 ul, li {
   margin: 0;
   padding: 0; }
@@ -392,3 +396,116 @@ ul, li {
 a.pure-button-primary, a.pure-button-selected {
   background-color: #0078e7;
   color: #fff; }
+
+body {
+  background: #f5f5f5;
+  color: #3b3b3b; }
+
+a {
+  color: #3b3b3b;
+  text-decoration: none; }
+
+@font-face {
+  font-family: "iconfont";
+  src: url("../../fonts/iconfont.eot");
+  /* IE9*/
+  src: url("../../fonts/iconfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/iconfont.woff") format("woff"), url("../../fonts/iconfont.ttf") format("truetype"), url("../../fonts/iconfont.svg#iconfont") format("svg");
+  /* iOS 4.1- */ }
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-twitter:before {
+  content: "\e601"; }
+
+.icon-weibo:before {
+  content: "\e606"; }
+
+.icon-lofter:before {
+  content: "\e602"; }
+
+.icon-email-copy:before {
+  content: "\e603"; }
+
+.icon-dribbble:before {
+  content: "\e604"; }
+
+.icon-github:before {
+  content: "\e605"; }
+
+.header {
+  height: 64px;
+  width: 100%;
+  background: #fff;
+  margin-bottom: 30px;
+  border-bottom: 1px solid transparent;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16); }
+
+.header-content {
+  padding: 0 50px 0 50px; }
+
+.blog-logo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 12px; }
+
+.nav {
+  margin-top: -32px; }
+  .nav ul {
+    float: right;
+    list-style: none; }
+    .nav ul li {
+      float: left;
+      margin-left: 20px; }
+      .nav ul li a {
+        text-decoration: none;
+        font-size: 18px; }
+        .nav ul li a:hover {
+          color: #a4e2c6; }
+      .nav ul li .select {
+        color: #a4e2c6; }
+
+.social-icon {
+  float: right;
+  margin-left: 30px; }
+  .social-icon > a {
+    margin-left: 5px;
+    color: #707070;
+    font-size: 18px; }
+
+.site-wrapper {
+  width: 1024px;
+  margin: 0 auto; }
+
+.post {
+  padding: 10px;
+  background: #fff;
+  border-radius: 2px; }
+
+.post-date {
+  font-size: 12px;
+  color: #707070; }
+  .post-date:after {
+    content: "";
+    border-bottom: 1px solid #a4e2c6;
+    display: block;
+    width: 50px;
+    margin-top: 5px; }
+
+.site-footer {
+  position: absolute;
+  top: 100%;
+  margin-top: -40px;
+  font-size: 12px;
+  height: 30px;
+  overflow: hidden;
+  color: #707070; }
+  .site-footer a {
+    color: #707070; }
