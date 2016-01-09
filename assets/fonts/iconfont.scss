@@ -15,9 +15,15 @@
   -webkit-text-stroke-width: 0.2px;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.icon-facebook-share:before { content: "\e600"; }
+.icon-twitter-share:before { content: "\e607"; }
 .icon-twitter:before { content: "\e601"; }
+.icon-weibo-share:before { content: "\e608"; }
+.icon-googleplus-share:before { content: "\e609"; }
 .icon-weibo:before { content: "\e606"; }
 .icon-lofter:before { content: "\e602"; }
 .icon-email-copy:before { content: "\e603"; }
 .icon-dribbble:before { content: "\e604"; }
 .icon-github:before { content: "\e605"; }
+.icon-weixin-share:before { content: "\e60a"; }

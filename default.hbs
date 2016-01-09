@@ -16,12 +16,13 @@
 
     {{! Styles'n'Scripts }}
     <link rel="stylesheet" type="text/css" href="{{asset "css/minify/main.css"}}" />
+    <link rel="stylesheet" type="text/css" href="//cdn.ice.gs/libs/highlight.js/8.9.1/styles/obsidian.min.css">
     
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
 </head>
 <body class="{{body_class}}">
-    <header class="header">
+    <header class="header animated bounce">
         <div class="header-content">
             {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
             {{navigation}}      
@@ -45,7 +46,8 @@
     {{ghost_foot}}
 
     {{! The main JavaScript file for Casper }}
-<!--    <script type="text/javascript" src="{{asset "js/index.js"}}"></script>-->
-
+    <script src="//cdn.ice.gs/libs/highlight.js/8.9.1/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script type="text/javascript" src="{{asset "js/minify/main.js"}}"></script>
 </body>
 </html>

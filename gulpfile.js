@@ -56,7 +56,7 @@ gulp.task('dev', function () {
   /* watch .sass|.scss files */
   gulp.watch(['assets/css/*.+(sass|scss)', 'assets/css/*/*.+(sass|scss)', 'assets/css/**/*.+(sass|scss)'], ['stylesDev']);
   /* watch .js files */
-  gulp.watch(['assets/js/*/*.js', 'assets/js/*.js'], ['scripts']);
+  gulp.watch(['assets/js/**/*.js'], ['scripts']);
 });
 
 gulp.task('release', ['styles', 'scripts']);
