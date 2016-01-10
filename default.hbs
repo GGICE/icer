@@ -36,18 +36,18 @@
 
         <footer class="site-footer clearfix">
             <section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}</section>
-            <section class="poweredby">Proudly published with JAVASCRIPT (Ghost), Theme Designed & Coded by GGICE </section>
+            <section class="poweredby">Proudly published with JAVASCRIPT (Ghost), Theme <a href="https://github.com/ggice/icer" target="_blank">icer</a> Designed & Coded by GGICE </section>
             
         </footer>
 
     </div>
 
-    {{! Ghost outputs important scripts and data with this tag }}
-    {{ghost_foot}}
-
     {{! The main JavaScript file for Casper }}
     <script src="//cdn.ice.gs/libs/highlight.js/8.9.1/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     <script type="text/javascript" src="{{asset "js/minify/main.js"}}"></script>
+    
+    {{! Ghost outputs important scripts and data with this tag }}
+    {{ghost_foot}}
 </body>
 </html>

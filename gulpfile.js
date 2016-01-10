@@ -35,7 +35,7 @@ gulp.task('stylesDev', function () {
   .pipe(gulp.dest('assets/css/minify'))
 
   .pipe(notify({
-    message: 'StyleDev task complete!'
+    message: 'StyleDev task complete!' 
   }))
 });
 
@@ -52,11 +52,22 @@ gulp.task('scripts', function () {
     }))
 });
 
+/* scriptsDev */
+gulp.task('scriptsDev', function () {
+  return gulp.src('assets/js/*.js')
+    .pipe(concat('main.js'))
+    .pipe(gulp.dest('assets/js/minify'))
+  
+   .pipe(notify({
+      message: 'JsDev task complete!'
+    }))
+});
+
 gulp.task('dev', function () {
   /* watch .sass|.scss files */
   gulp.watch(['assets/css/*.+(sass|scss)', 'assets/css/*/*.+(sass|scss)', 'assets/css/**/*.+(sass|scss)'], ['stylesDev']);
   /* watch .js files */
-  gulp.watch(['assets/js/**/*.js'], ['scripts']);
+  gulp.watch(['assets/js/**/*.js'], ['scriptsDev']);
 });
 
 gulp.task('release', ['styles', 'scripts']);
