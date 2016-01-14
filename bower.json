@@ -2,6 +2,6 @@
   "name": "icer",
   "version": "0.1.0",
   "dependencies": {
-    "GCSS": "^0.1.1"
+    "GCSS": "^0.1.2"
   }
 }
