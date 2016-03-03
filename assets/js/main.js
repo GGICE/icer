@@ -12,34 +12,6 @@
     }
   }
 
-  function nav() {
-    var url = window.location.href.match(/\/\/\S*/)[0],
-      navList = document.querySelectorAll('.nav > ul > li > a'),
-      tags = document.querySelectorAll('.post-meta > a'),
-      i = 0, 
-      href;
-
-    for (i; i < navList.length; i++) {
-      $.removeClass(navList[i], 'select');
-      href = navList[i].href.match(/\/\/\S*/)[0];
-
-      if (url === href) {
-        $.addClass(navList[i], 'select');
-        break;
-      }
-
-      if (tags[0] && (href === tags[0].href.match(/\/\/\S*/)[0])) {
-        $.addClass(navList[i], 'select');
-        break;
-      }
-
-      if (tags[1] && (href === tags[1].href.match(/\/\/\S*/)[0])) {
-        $.addClass(navList[i], 'select');
-        break;
-      } 
-    }
-  }
-
   function scroll() {
     var header = document.querySelector('.header'),
       headerTitle = document.querySelector('.header-title');
@@ -55,6 +27,5 @@
     }
   }
 
-  nav();
   scroll();
 }());
