@@ -1,31 +1,31 @@
 html
   font-size: 100%
-  
+
 body
   font-size: 14px
-  background: $backgroud 
+  background: $backgroud
   color: $word
-  
+
 a
   color: $word-dark
   text-decoration: none
-  
+
   &:hover
     color: $blue
-    
+
 img
   max-width: 100%
   height: auto
-  
+
 ul,ol
-  margin-left: 15px 
+  margin-left: 15px
 
 h1
   font-size: 20px
 
 h2
   font-size: 18px
-  
+
 hr
   display: block
   padding: 0
@@ -41,12 +41,22 @@ code,tt ß
   vertical-align: middle
   white-space: pre-wrap
   font-size: 1em
-  line-height: 1em  
+  line-height: 1em
+
+.hide
+  display: none !important
 
 .show
   display: block !important
-  
+
 .show-inline
   display: inline-block !important
 
-  
+.shade
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background: $shade-bg
+  display: none

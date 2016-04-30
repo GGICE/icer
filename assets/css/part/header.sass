@@ -1,7 +1,7 @@
 .header
-  height: 64px 
+  height: 64px
   width: 100%
-  background: $white 
+  background: $white
   margin-bottom: 30px
   border-bottom: 1px solid transparent
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16)
@@ -11,30 +11,31 @@
 
 .header-content
   padding: 0 50px 0 50px
-  
+
 .blog-logo
   img
     width: 40px
     height: 40px
     border-radius: 50%
-    display: inline-block 
-    margin-top: 12px 
-    
+    display: inline-block
+    margin-top: 12px
+
 .nav
-  margin-top: -32px;
-  
+  margin-top: 25px
+  float: right
+
   ul
-    float: right 
+    float: right
     list-style: none
-  
-    li                               
+
+    li
       float: left
-      margin-left: 20px 
-      
+      margin-left: 20px
+
       a
         text-decoration: none
         font-size: 14px
-    
+
         &:hover
           color: $blue
 
@@ -46,8 +47,42 @@
   float: right
   margin-left: 30px
   margin-top: -3px
-  
+
   >a
     margin-left: 5px
     color: $word-light
     font-size: 17px
+
+.header-title
+  display: none
+  position: fixed
+  z-index: 3
+  top: 0
+  margin-top: 0
+  line-height: 64px
+
+.icon-more
+  float: right
+  margin-top: 25px
+  display: none
+
+@media screen and (max-width: 1024px)
+  .header-title
+    display: none !important
+
+  .nav
+    position: fixed
+    margin-top: 220px
+    text-align: center
+    display: none
+
+    ul
+      float: none
+    a
+      color: $white
+
+  .social-icon
+    float: none
+
+  .icon-more
+    display: block

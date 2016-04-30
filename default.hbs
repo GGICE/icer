@@ -10,14 +10,14 @@
     <meta name="description" content="{{meta_description}}" />
 
     <meta name="HandheldFriendly" content="True" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height"/>
 
     <link rel="shortcut icon" href="{{asset "/favicon.ico"}}">
 
     {{! Styles'n'Scripts }}
     <link rel="stylesheet" type="text/css" href="{{asset "css/minify/main.css"}}" />
     <link rel="stylesheet" type="text/css" href="//cdn.ice.gs/libs/highlight.js/8.9.1/styles/obsidian.min.css">
-    
+
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
 </head>
@@ -25,7 +25,7 @@
     <header class="header">
         <div class="header-content">
             {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
-            {{navigation}}      
+            {{navigation}}
         </div>
     </header>
 
@@ -37,16 +37,16 @@
         <footer class="site-footer clearfix">
             <section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}</section>
             <section class="poweredby">Proudly published with JAVASCRIPT (Ghost), Theme <a href="https://github.com/ggice/icer" target="_blank">icer</a> Designed & Coded by <a href="http://ice.gs" target="_blank">GGICE</a> </section>
-            
+
         </footer>
 
     </div>
-
+    <div class="shade animated fadeIn"></div>
     {{! The main JavaScript file for Casper }}
     <script src="//cdn.ice.gs/libs/highlight.js/8.9.1/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     <script type="text/javascript" src="{{asset "js/minify/main.js"}}"></script>
-    
+
     {{! Ghost outputs important scripts and data with this tag }}
     {{ghost_foot}}
 </body>
