@@ -1,7 +1,25 @@
 {
   "name": "icer",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "ICE.GS site theme.",
+  "author": "GGICE",
+  "homepage": "https://ice.gs",
+  "keywords": [
+    "ghost",
+    "blog",
+    "cms"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ggice/icer.git"
+  },
+  "bugs": "https://github.com/ggice/icer/issues",
+  "contributors": "https://github.com/ggice/icer/graphs/contributors",
+  "license": "MIT",
+  "main": "./core/index",
+  "engines": {
+    "node": "~0.10.0 || ~0.12.0 || ^4.2.0"
+  },
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-sass": "^2.1.1",
