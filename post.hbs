@@ -26,9 +26,8 @@
         <footer class="post-footer">
 
         {{! Everything inside the #author tags pulls data from the author }}
-        {{#author}}
-
 <!--
+        {{#author}}
             {{#if image}}
             <figure class="author-image">
                 <a class="img" href="{{url}}" style="background-image: url({{image}})"><span class="hidden">{{name}}'s Picture</span></a>
@@ -51,7 +50,17 @@
 
         {{/author}}
 -->
-
+            <div class="google-ad" style="width: 100%; text-align: center;">
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- ggice.net 文章页面广告 -->
+                    <ins class="adsbygoogle"
+                    style="display:inline-block;width:728px;height:90px;"
+                    data-ad-client="ca-pub-4068035403937094"
+                    data-ad-slot="5914806523"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
             <section class="share">
                 <h4>Share this post</h4>
                 <a class="iconfont icon-weibo-share" href="http://v.t.sina.com.cn/share/share.php?title={{encode title}}&amp;url={{url absolute="true"}}"
