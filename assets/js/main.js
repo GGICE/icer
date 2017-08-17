@@ -68,7 +68,7 @@
     var gitalk = new Gitalk({
       clientID: '83a3413b0591f7c338af',
       clientSecret: '177f437bdc6573b374fa1ef51efb03e4c374d921',
-      repo: 'git@github.com:GGICE/ICE.GS.git',
+      repo: 'ICE.GS',
       owner: 'GGICE',
       admin: ['GGICE'],
       // facebook-like distraction free mode
