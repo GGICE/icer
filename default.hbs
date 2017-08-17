@@ -17,7 +17,7 @@
     {{! Styles'n'Scripts }}
     <link rel="stylesheet" type="text/css" href="{{asset "css/minify/main.css"}}" />
     <link rel="stylesheet" type="text/css" href="//cdn.ice.gs/libs/highlight.js/8.9.1/styles/obsidian.min.css">
-
+    <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
 </head>
@@ -44,6 +44,7 @@
     <div class="shade animated fadeIn"></div>
     {{! The main JavaScript file for Casper }}
     <script src="//cdn.ice.gs/libs/highlight.js/8.9.1/highlight.min.js"></script>
+    <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     <script type="text/javascript" src="{{asset "js/minify/main.js"}}"></script>
 

@@ -64,6 +64,21 @@
     });
   }
 
+  function commit () {
+    var gitalk = new Gitalk({
+      clientID: '83a3413b0591f7c338af',
+      clientSecret: '177f437bdc6573b374fa1ef51efb03e4c374d921',
+      repo: 'git@github.com:GGICE/ICE.GS.git',
+      owner: 'GGICE',
+      admin: ['GGICE'],
+      // facebook-like distraction free mode
+      distractionFreeMode: false
+    })
+    
+    gitalk.render('gitalk-container')
+  }
+
   scroll();
   addEventListener();
+  commit();
 }());
